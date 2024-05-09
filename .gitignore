@@ -139,3 +139,6 @@ video/**
 
 # exclude premiere pro files
 *.prproj
+
+# exclude data directory
+data/**
