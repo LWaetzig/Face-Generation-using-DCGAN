@@ -1,6 +1,8 @@
 # Face Generation using Deep Convolutional Generative Adversarial Network (DCGAN)
 
 ## What's in it
+
+### TLDR
 This repository is related to the Artificial Intelligence Course of DHBW Mannheim. It tries to generate faces using an Deep Convolutional Generative Adversarial Network (DCGAN).
 The project uses the common dataset [CelebA](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) which consists of more than 200k images of celebrities to generate fake faces. Therefore an typical architecture of a GAN neural network will be created and trained on this dataset.
 A short introduction to GAN Neural Networks is provided below.
@@ -14,9 +16,16 @@ The discriminator then attempts to distinguish between the real data and the dat
 The generator learns to produce data that is increasingly similar to the real data, while the discriminator learns to distringuish between real and generated data.
 This enables GAN network to generate realistic.
 
-### Frechet Inception Distance
-To evaluate the GANs performance this notebook uses the Frechet Inception Distance (FID). It's a metric to measure the similarity between the generated and real distribution of the images based on the activation weights of a pretrained network.
-An low FID-value indicates a high similarity between the generated and the real images.
+### Train Process
+The Generative Adversarial Network (GAN) is trained over 100 epochs. In each epoch, the discriminator is trained to generate fake images based on some noise. Subsequently, the generator is trained to distinguish between real images and generated images. For the purpose of visualisation, an evaluation step is conducted after the training process. This involves generating a new set of faces using the generator and represents the learning process.
+You can find these images in this [directory](./data/generated/)
+
+### Evaluation Process
+Once the training procedure has been completed, it is necessary to evaluate the performance of the model. The plot in cell 12 displays the losses of the discriminator and generator during the process. Furthermore the notebook implements a method for evaluating the quality of generated images using the Frechet Inception Distance (FID).
+
+#### Frechet Inception Distance
+To assess the GANs performance this notebook employs the Frechet Inception Distance (FID) metric. This metric quantifies the similarity between the generated and real distributions of images based on the activation weights of a pretrained network. Consequently, a pretrained inception model is utilized.
+A low FID value indicates a high degree of similarity between the generated and the real images.
 
 
 ## Requirements
