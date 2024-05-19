@@ -17,8 +17,7 @@ The generator learns to produce data that is increasingly similar to the real da
 This enables GAN network to generate realistic.
 
 ### Train Process
-The Generative Adversarial Network (GAN) is trained over 10 epochs on a M2 Pro. In each epoch, the discriminator is trained to generate fake images based on some noise. Subsequently, the generator is trained to distinguish between real images and generated images. For the purpose of visualisation, an evaluation step is conducted after the training process. This involves generating a new set of faces using the generator and represents the learning process.
-You can find these images in this [directory](./data/generated/)
+The Generative Adversarial Network (GAN) is trained over 10 epochs on a M2 Pro. In each epoch, the discriminator is trained to generate fake images based on some noise. Subsequently, the generator is trained to distinguish between real images and generated images. For the purpose of visualisation, an evaluation step is conducted after the training process. This involves generating a new set of faces using the generator and represents the learning process. You can find these images in this [directory](./data/generated/)
 
 ### Evaluation Process
 Once the training procedure has been completed, it is necessary to evaluate the performance of the model. The plot in cell 12 displays the losses of the discriminator and generator during the process. Furthermore the notebook implements a method for evaluating the quality of generated images using the Frechet Inception Distance (FID).
@@ -32,7 +31,7 @@ A low FID value indicates a high degree of similarity between the generated and 
 Follow these steps befor running the notebook
 
 - [ ] python 3.9 or newer installed
-- [ ] packages listed in the [requirements.txt]() file are installed
+- [ ] packages listed in the [requirements.txt](./requirements.txt) file are installed
 - [ ] CelebA-Dataset
 
 > **note:** the trainings process is much faster when using cuda, so maybe setup and install pytorch with cuda (or *mps* on mMacs)
