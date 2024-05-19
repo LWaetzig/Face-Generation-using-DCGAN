@@ -17,7 +17,7 @@ The generator learns to produce data that is increasingly similar to the real da
 This enables GAN network to generate realistic.
 
 ### Train Process
-The Generative Adversarial Network (GAN) is trained over 100 epochs on a NVIDIA RTX 3060. In each epoch, the discriminator is trained to generate fake images based on some noise. Subsequently, the generator is trained to distinguish between real images and generated images. For the purpose of visualisation, an evaluation step is conducted after the training process. This involves generating a new set of faces using the generator and represents the learning process.
+The Generative Adversarial Network (GAN) is trained over 10 epochs on a M2 Pro. In each epoch, the discriminator is trained to generate fake images based on some noise. Subsequently, the generator is trained to distinguish between real images and generated images. For the purpose of visualisation, an evaluation step is conducted after the training process. This involves generating a new set of faces using the generator and represents the learning process.
 You can find these images in this [directory](./data/generated/)
 
 ### Evaluation Process
