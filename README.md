@@ -3,8 +3,8 @@
 ## What's in it
 
 ### TLDR
-This repository is related to the Artificial Intelligence course of the DHBW Mannheim. It tries to generate faces using an Deep Convolutional Generative Adversarial Network (DCGAN).
-The project uses the common dataset [CelebA](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) which consists of more than 200k images of celebrities to generate fake faces. Therefore a typical architecture of a GAN will be built and trained on this dataset.
+This repository implements an approach of generating human faces using a Deep Convolutional Generative Adversarial Network (DCGAN).
+The repository uses the common dataset [CelebA](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) which consists of more than 200k images of celebrities and a typical architecture of GAN trained on this dataset.
 A short introduction to Generative Adversarial Neural Networks is given below.
 
 
@@ -30,11 +30,11 @@ A low FID value indicates a high degree of similarity between the generated and 
 ## Requirements
 Follow these steps befor running the notebook
 
-- [ ] python 3.9 or newer installed
+- [ ] python 3.11. or newer installed
 - [ ] packages listed in the [requirements.txt](./requirements.txt) file are installed
 - [ ] CelebA-Dataset
 
-> **note:** the trainings process is much faster when using cuda, so maybe setup and install pytorch with cuda (or *mps* on mMacs)
+> **note:** the training process is much faster when using cuda, so maybe setup and install pytorch with cuda (or *mps* on mMacs)
 
 ### Directory structure
 ```
