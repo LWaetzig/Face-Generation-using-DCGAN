@@ -3,7 +3,7 @@ name = "face-generation-using-dcgan"
 version = "0.1.0"
 description = "DCGAN-based face image generation project using PyTorch"
 readme = "README.md"
-requires-python = ">=3.11.12"
+requires-python = ">=3.11"
 dependencies = [
     "ipykernel>=7.2.0",
     "matplotlib>=3.10.8",
