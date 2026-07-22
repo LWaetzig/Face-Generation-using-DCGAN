@@ -31,7 +31,7 @@ A low FID value indicates a high degree of similarity between the generated and 
 Follow these steps befor running the notebook
 
 - [ ] python 3.11. or newer installed
-- [ ] packages listed in the [requirements.txt](./requirements.txt) file are installed
+- [ ] uv package manager; packages listed in the [pyproject.toml](pyproject.toml) file
 - [ ] CelebA-Dataset
 
 > **note:** the training process is much faster when using cuda, so maybe setup and install pytorch with cuda (or *mps* on mMacs)
