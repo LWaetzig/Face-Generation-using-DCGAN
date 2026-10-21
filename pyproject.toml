@@ -10,8 +10,9 @@ dependencies = [
     "numpy>=2.4.4",
     "pillow>=12.2.0",
     "pytorch-fid>=0.3.0",
-    "torch<2.13.0",
+    "setuptools>=81.0.0",
+    "torch<2.14.2",
     "torchvision>=0.26.0",
-    "tornado<=6.5.6",
+    "tornado<=6.5.10",
     "tqdm>=4.67.3",
 ]

@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.11.12"
 resolution-markers = [
     "python_full_version >= '3.12'",
@@ -327,6 +327,7 @@ dependencies = [
     { name = "numpy" },
     { name = "pillow" },
     { name = "pytorch-fid" },
+    { name = "setuptools" },
     { name = "torch" },
     { name = "torchvision" },
     { name = "tornado" },
@@ -340,9 +341,10 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.4.4" },
     { name = "pillow", specifier = ">=12.2.0" },
     { name = "pytorch-fid", specifier = ">=0.3.0" },
-    { name = "torch", specifier = "<2.13.0" },
+    { name = "setuptools", specifier = ">=81.0.0" },
+    { name = "torch", specifier = "<2.14.2" },
     { name = "torchvision", specifier = ">=0.26.0" },
-    { name = "tornado", specifier = "<=6.5.6" },
+    { name = "tornado", specifier = "<=6.5.10" },
     { name = "tqdm", specifier = ">=4.67.3" },
 ]
 
